@@ -10,7 +10,7 @@ export const HeroSection = () => {
               <span>/</span>
               <span className="text-ride-orange">CARREIRA</span>
             </div>
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-8 animate-fade-in animation-delay-200">ABN MOTO SERVICES</h1>
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-8 animate-fade-in animation-delay-200 text-red-600">ABN MOTO SERVICES</h1>
           </div>
         </div>
       </div>
