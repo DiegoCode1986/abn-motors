@@ -1,9 +1,10 @@
 
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
-import { JoinTeamSection } from "@/components/JoinTeamSection";
-import { OpenPositionsSection } from "@/components/OpenPositionsSection";
-import { BenefitsSection } from "@/components/BenefitsSection";
+import { AboutSection } from "@/components/AboutSection";
+import { ServicesSection } from "@/components/ServicesSection";
+import { BrandsSection } from "@/components/BrandsSection";
+import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -11,9 +12,10 @@ const Index = () => {
     <div className="min-h-screen bg-ride-dark text-white">
       <Header />
       <HeroSection />
-      <JoinTeamSection />
-      <OpenPositionsSection />
-      <BenefitsSection />
+      <AboutSection />
+      <ServicesSection />
+      <BrandsSection />
+      <ContactSection />
       <Footer />
     </div>
   );
