@@ -43,7 +43,7 @@ export const AboutSection = () => {
 
           <div className="relative animate-fade-in animation-delay-300">
             <img 
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="/dono.jpg"
               alt="Mecânico especializado trabalhando em motocicleta premium"
               className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-lg transform hover:scale-[1.02] transition-transform duration-500"
             />

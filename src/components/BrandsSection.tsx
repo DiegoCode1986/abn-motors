@@ -4,26 +4,31 @@ export const BrandsSection = () => {
   const brands = [
     {
       name: "BMW",
+      logo: "/bmw.jpg",
       specialty: "Atualização de software GS, S e XR",
       description: "Especialistas em toda linha BMW com tecnologia de diagnóstico avançada"
     },
     {
-      name: "HARLEY DAVIDSON", 
+      name: "HARLEY DAVIDSON",
+      logo: "/harley-removebg.png",
       specialty: "Manutenção completa",
       description: "Serviços especializados para a linha completa Harley Davidson"
     },
     {
       name: "TRIUMPH",
+      logo: "triumph.jpg",
       specialty: "Scanner e diagnóstico",
       description: "Tecnologia específica para diagnóstico e manutenção Triumph"
     },
     {
       name: "INDIAN",
+      logo: "/indian-removeb.png",
       specialty: "Scanner e manutenção",
       description: "Equipamentos especializados para motocicletas Indian"
     },
     {
       name: "HONDA",
+      logo: "/honda-removebg.png",
       specialty: "Incluindo Gold Wing",
       description: "Manutenção completa Honda incluindo a sofisticada Gold Wing"
     }
@@ -47,36 +52,20 @@ export const BrandsSection = () => {
           {brands.map((brand, index) => (
             <div 
               key={index} 
-              className="bg-ride-gray p-6 sm:p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl animate-fade-in"
+              className="bg-ride-gray p-6 sm:p-8 rounded-lg hover:transform hover:scale-105 transition-all duration-300 hover:shadow-xl animate-fade-in flex flex-col"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <h3 className="text-xl sm:text-2xl font-bold text-ride-orange mb-2">
-                {brand.name}
-              </h3>
-              <h4 className="text-lg font-semibold text-white mb-3">
-                {brand.specialty}
-              </h4>
-              <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                {brand.description}
-              </p>
+              <div className="flex flex-col items-center text-center">
+                <img src={brand.logo} alt={`${brand.name} logo`} className="h-22 mb-6 object-contain" />
+                <h3 className="text-xl font-bold text-ride-orange tracking-wider uppercase">{brand.name}</h3>
+                <p className="text-white font-semibold mb-3">{brand.specialty}</p>
+                <p className="text-gray-300 text-sm">{brand.description}</p>
+              </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 sm:mt-16 text-center animate-fade-in animation-delay-700">
-          <div className="bg-ride-orange bg-opacity-10 p-6 sm:p-8 rounded-lg max-w-3xl mx-auto">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-              Sua marca não está listada?
-            </h3>
-            <p className="text-gray-300 text-base sm:text-lg mb-6">
-              Entre em contato conosco! Nossa experiência de mais de 20 anos nos permite 
-              trabalhar com diversas outras marcas e modelos de motocicletas.
-            </p>
-            <Button className="bg-ride-orange hover:bg-orange-600 text-white px-8 py-3 rounded-lg transform hover:scale-105 transition-all duration-300">
-              CONSULTE SUA MARCA
-            </Button>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

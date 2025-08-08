@@ -21,18 +21,15 @@ export const Header = () => {
               <span>(021) 3456 7890</span>
             </div>
           </div>
-          <div className="flex items-center space-x-4">
-            <span className="text-gray-300 hover:text-ride-orange transition-colors cursor-pointer">ENGLISH</span>
-            <span className="text-gray-300 hover:text-ride-orange transition-colors cursor-pointer">LOGIN</span>
-          </div>
+          
         </div>
 
         {/* Main navigation */}
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <div className="text-xl sm:text-2xl font-bold">
-              <span className="text-white">RIDE</span>
-              <span className="bg-ride-orange px-2 py-1 rounded text-white ml-1 transform hover:scale-105 transition-transform">ON</span>
+              <span className="text-white">ABN MOTORS</span>
+              <span className="bg-ride-orange px-2 py-1 rounded text-white ml-1 transform hover:scale-105 transition-transform">SERVICES</span>
             </div>
           </div>
 
@@ -66,7 +63,7 @@ export const Header = () => {
 
           <div className="flex items-center space-x-4">
             <Button className="hidden sm:block bg-ride-orange hover:bg-orange-600 text-white px-4 sm:px-6 py-2 rounded transform hover:scale-105 transition-all duration-300">
-              CONTACT US
+              Fale Conosco
             </Button>
             
             {/* Mobile menu button */}
