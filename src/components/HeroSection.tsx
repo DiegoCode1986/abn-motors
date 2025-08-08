@@ -4,7 +4,7 @@ export const HeroSection = () => {
     <section className="relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-screen bg-cover bg-center bg-no-repeat flex items-center" 
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
-          url('/banner.PNG')`,
+          url('/banner2.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center 60%'
       }}

@@ -69,28 +69,6 @@ export const ContactSection = () => {
             <h3 className="text-2xl font-bold text-white mb-6">Solicite um Orçamento</h3>
             
             <form className="space-y-4">
-              <Input 
-                placeholder="Seu nome completo" 
-                className="bg-ride-dark border-gray-600 text-white placeholder-gray-400"
-              />
-              <Input 
-                placeholder="Seu telefone" 
-                className="bg-ride-dark border-gray-600 text-white placeholder-gray-400"
-              />
-              <Input 
-                placeholder="Seu e-mail" 
-                type="email"
-                className="bg-ride-dark border-gray-600 text-white placeholder-gray-400"
-              />
-              <Input 
-                placeholder="Marca e modelo da sua moto" 
-                className="bg-ride-dark border-gray-600 text-white placeholder-gray-400"
-              />
-              <textarea 
-                placeholder="Descreva o serviço desejado ou problema"
-                rows={4}
-                className="w-full p-3 bg-ride-dark border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-ride-orange"
-              />
               
               <Button className="w-full bg-ride-orange hover:bg-orange-600 text-white py-3 transform hover:scale-105 transition-all duration-300">
                 SOLICITAR ORÇAMENTO

@@ -1,117 +1,72 @@
-
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+
+const WhatsAppIcon = (props) => (
+  <svg viewBox="0 0 32 32" {...props}>
+    <path
+      d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.044-.53-.044-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.52-1.29.372-.775.372-1.447.26-1.59-.115-.143-.372-.215-.6-.215zm-2.722 4.305c-1.48 0-2.93-.402-4.2-1.195L8.34 21.9l.925-2.26c-1.017-1.36-1.518-2.94-1.518-4.635 0-4.002 3.226-7.228 7.226-7.228s7.228 3.226 7.228 7.228c0 4.00-3.226 7.226-7.228 7.226z"
+      fill="currentColor"
+    />
+  </svg>
+);
 
 export const Footer = () => {
   return (
-    <footer className="bg-black text-white">
-      <div className="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        {/* Newsletter Section */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-12 sm:mb-16 pb-8 border-b border-gray-800 animate-fade-in">
-          <div className="mb-6 lg:mb-0 w-full lg:w-auto">
-            <div className="text-xl sm:text-2xl font-bold mb-4">
-              <span className="text-white">RIDE</span>
-              <span className="bg-ride-orange px-2 py-1 rounded text-white ml-1 transform hover:scale-105 transition-transform">ON</span>
-            </div>
-            <p className="text-gray-300 max-w-md text-sm sm:text-base">
-              Seja parte de uma equipe especializada em manutenção de motocicletas. 
-              Inscreva-se para receber atualizações sobre novas vagas e oportunidades.
-            </p>
-          </div>
+    <footer className="bg-black text-white relative">
+      {/* "Join the Club" Section */}
+      <div 
+        className="relative bg-orange-600 text-center py-16 sm:py-20 px-4"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/banner.PNG')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4 uppercase tracking-wider">Junte-se ao Clube</h2>
+        <p className="max-w-2xl mx-auto mb-8 text-gray-200">
+          Fique por dentro das novidades, eventos exclusivos e promoções especiais da ABN Motors. Faça parte da nossa comunidade de apaixonados por duas rodas.
+        </p>
+        <Button variant="secondary" className="bg-black text-white hover:bg-gray-800 px-8 py-3 uppercase">
+          Fazer orçamento
+        </Button>
+      </div>
+
+      {/* Main Footer Section */}
+      <div className="container mx-auto px-4 sm:px-6 py-8">
+        <div className="flex flex-col md:flex-row justify-between items-center text-center">
           
-          <div className="flex flex-col w-full lg:w-auto lg:flex-row lg:items-center gap-4">
-            <div className="text-xl sm:text-2xl font-bold text-white mb-2 lg:mb-0 lg:mr-8">
-              NEWSLETTER
+          {/* Left Logo */}
+          <div className="mb-6 md:mb-0 md:w-1/3 flex justify-center md:justify-start">
+            <img src="/logo1.png" alt="ABN MOTORS" className="h-16 w-auto opacity-80" />
+          </div>
+
+          {/* Center Content */}
+          <div className="flex flex-col items-center mb-6 md:mb-0 md:w-1/3">
+            <p className="text-sm uppercase tracking-wider mb-2 text-gray-400">Siga-nos</p>
+            <div className="flex space-x-4 mb-4">
+              <a href="#" className="text-gray-300 hover:text-orange-500 transition-colors"><Facebook size={20} /></a>
+              <a href="#" className="text-gray-300 hover:text-orange-500 transition-colors"><Instagram size={20} /></a>
             </div>
-            <div className="flex flex-col sm:flex-row gap-2 w-full lg:w-auto">
-              <Input 
-                placeholder="Seu melhor email aqui" 
-                className="bg-gray-800 border-gray-700 text-white placeholder-gray-400 w-full sm:min-w-[250px]"
-              />
-              <Button className="bg-ride-orange hover:bg-orange-600 px-6 transform hover:scale-105 transition-all duration-300">
-                SUBSCRIBE
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12 animate-fade-in animation-delay-200">
-          {/* Contact Info */}
-          <div className="lg:col-span-2">
-            <div className="space-y-4">
-              <div className="flex items-center space-x-3 hover:text-ride-orange transition-colors cursor-pointer">
-                <Phone className="w-5 h-5 text-ride-orange" />
-                <span className="text-sm sm:text-base">(021) 3456 789</span>
-              </div>
-              <div className="flex items-center space-x-3 hover:text-ride-orange transition-colors cursor-pointer">
-                <Mail className="w-5 h-5 text-ride-orange" />
-                <span className="text-sm sm:text-base">customer@ride-on.com</span>
-              </div>
-              <div className="flex items-start space-x-3 hover:text-ride-orange transition-colors cursor-pointer">
-                <MapPin className="w-5 h-5 text-ride-orange mt-1" />
-                <span className="text-sm sm:text-base">Rua Das Motocicletas, 123<br />São Paulo - SP</span>
-              </div>
-              <div className="text-gray-300 text-sm sm:text-base">
-                Seg - Sex 8 am - 7 pm
-              </div>
-            </div>
+            <p className="text-xs text-gray-500">© {new Date().getFullYear()} ABN MOTORS. Todos os direitos reservados.</p>
           </div>
 
-          {/* About */}
-          <div>
-            <h4 className="font-semibold text-white mb-4 text-sm sm:text-base">SOBRE</h4>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Sobre Nós</a></li>
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Serviços</a></li>
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Empregos</a></li>
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Últimas Notícias</a></li>
-            </ul>
-          </div>
-
-          {/* Interest */}
-          <div>
-            <h4 className="font-semibold text-white mb-4 text-sm sm:text-base">INTERESSE</h4>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Contate-nos</a></li>
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Encontre um Dealer</a></li>
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Eventos</a></li>
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Proprietários</a></li>
-            </ul>
-          </div>
-
-          {/* Commercial */}
-          <div>
-            <h4 className="font-semibold text-white mb-4 text-sm sm:text-base">COMERCIAL</h4>
-            <ul className="space-y-2 text-gray-300 text-sm">
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Política / Militar</a></li>
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Torne-se um Dealer</a></li>
-              <li><a href="#" className="hover:text-ride-orange transition-colors">Sistemas PowerTrain</a></li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Social Media & Copyright */}
-        <div className="flex flex-col lg:flex-row justify-between items-center pt-8 border-t border-gray-800 animate-fade-in animation-delay-400">
-          <div className="flex space-x-4 mb-4 lg:mb-0">
-            <Facebook className="w-6 h-6 text-gray-400 hover:text-ride-orange cursor-pointer transition-all duration-300 transform hover:scale-110" />
-            <Twitter className="w-6 h-6 text-gray-400 hover:text-ride-orange cursor-pointer transition-all duration-300 transform hover:scale-110" />
-            <Instagram className="w-6 h-6 text-gray-400 hover:text-ride-orange cursor-pointer transition-all duration-300 transform hover:scale-110" />
-            <Linkedin className="w-6 h-6 text-gray-400 hover:text-ride-orange cursor-pointer transition-all duration-300 transform hover:scale-110" />
-            <Youtube className="w-6 h-6 text-gray-400 hover:text-ride-orange cursor-pointer transition-all duration-300 transform hover:scale-110" />
-          </div>
-          
-          <div className="flex flex-wrap justify-center lg:justify-end space-x-4 sm:space-x-6 text-xs sm:text-sm text-gray-400">
-            <span className="mb-2 lg:mb-0">COPYRIGHT 2024 RIDE-ON ALL RIGHTS RESERVED</span>
-            <a href="#" className="hover:text-ride-orange transition-colors">POLICY</a>
-            <a href="#" className="hover:text-ride-orange transition-colors">PRIVACY</a>
-            <a href="#" className="hover:text-ride-orange transition-colors">TERMS</a>
-            <a href="#" className="hover:text-ride-orange transition-colors">ACCESSIBILITY</a>
-            <a href="#" className="hover:text-ride-orange transition-colors">SITE MAP</a>
+          {/* Right placeholder to balance the layout */}
+          <div className="md:w-1/3">
+            {/* Este espaço é para equilibrar o layout, como na imagem de referência. */}
           </div>
         </div>
       </div>
+
+      {/* Floating WhatsApp Button */}
+      <a 
+        href="https://wa.me/552134567890" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform transform hover:scale-110 z-50 flex items-center justify-center"
+        aria-label="Fale conosco pelo WhatsApp"
+      >
+        <WhatsAppIcon className="w-12 h-12" />
+      </a>
     </footer>
   );
 };

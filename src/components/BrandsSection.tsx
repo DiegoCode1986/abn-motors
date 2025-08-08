@@ -4,7 +4,7 @@ export const BrandsSection = () => {
   const brands = [
     {
       name: "BMW",
-      logo: "/bmw.jpg",
+      logo: "/bmw-removebg.png",
       specialty: "Atualização de software GS, S e XR",
       description: "Especialistas em toda linha BMW com tecnologia de diagnóstico avançada"
     },
@@ -16,7 +16,7 @@ export const BrandsSection = () => {
     },
     {
       name: "TRIUMPH",
-      logo: "triumph.jpg",
+      logo: "triumph-removebg.png",
       specialty: "Scanner e diagnóstico",
       description: "Tecnologia específica para diagnóstico e manutenção Triumph"
     },
