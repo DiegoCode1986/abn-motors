@@ -46,9 +46,9 @@ export const ContactSection = () => {
                 <MapPin className="w-6 h-6 text-ride-orange mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-white mb-1">Endereço</h4>
-                  <p className="text-gray-300">Rua das Motocicletas, 123</p>
-                  <p className="text-gray-300">Vila Moto - São Paulo, SP</p>
-                  <p className="text-gray-300">CEP: 01234-567</p>
+                  <p className="text-gray-300">SMAS Área Especial G Conjunto A Lote 16/17 </p>
+                  <p className="text-gray-300">Guará, Brasília - DF</p>
+                  <p className="text-gray-300">CEP:71215-300</p>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ export const ContactSection = () => {
                 <Clock className="w-6 h-6 text-ride-orange mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-white mb-1">Horário de Funcionamento</h4>
-                  <p className="text-gray-300">Segunda a Sexta: 8h às 18h</p>
+                  <p className="text-gray-300">Segunda a Sexta: 8h às 17h</p>
                   <p className="text-gray-300">Sábado: 8h às 12h</p>
                   <p className="text-gray-300">Domingo: Fechado</p>
                 </div>

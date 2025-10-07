@@ -53,9 +53,7 @@ export const ServicesSection = () => {
                 <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
                   {service.description}
                 </p>
-                <Button className="bg-ride-orange hover:bg-orange-600 text-white px-6 py-2 rounded w-full transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
-                  SAIBA MAIS
-                </Button>
+               
               </div>
             );
           })}

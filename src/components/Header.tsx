@@ -14,7 +14,7 @@ export const Header = () => {
           </div>
           <div className="flex items-center space-x-2 text-gray-300 hover:text-ride-orange transition-colors">
             <Phone className="w-4 h-4" />
-            <span>(021) 3456 7890</span>
+            <span>61 98575-6479</span>
           </div>
         </div>
 
@@ -22,10 +22,10 @@ export const Header = () => {
         <div className="relative flex justify-center items-center py-4">
           {/* Left side for tablet and up - Social Icons */}
           <div className="hidden md:flex absolute left-0 items-center space-x-4">
-            <a href="#" className="text-gray-300 hover:text-ride-orange transition-colors">
+            <a href="https://www.instagram.com/abnmoto" className="text-gray-300 hover:text-ride-orange transition-colors">
               <Instagram className="w-6 h-6" />
             </a>
-            <a href="#" className="text-gray-300 hover:text-ride-orange transition-colors">
+            <a href="https://www.facebook.com/abnmotoservice/photos/?locale=pt_BR" className="text-gray-300 hover:text-ride-orange transition-colors">
               <Facebook className="w-6 h-6" />
             </a>
           </div>
