@@ -28,27 +28,22 @@ export const ContactSection = () => {
                 <Phone className="w-6 h-6 text-ride-orange mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-white mb-1">Telefone</h4>
-                  <p className="text-gray-300">(11) 98765-4321</p>
-                  <p className="text-gray-300">(11) 3456-7890</p>
+                  <p className="text-gray-300">(61) 99867-3293</p>
+                 
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4 p-4 bg-ride-dark rounded-lg hover:bg-opacity-80 transition-all duration-300">
-                <Mail className="w-6 h-6 text-ride-orange mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="font-semibold text-white mb-1">E-mail</h4>
-                  <p className="text-gray-300">contato@abnmotoservices.com.br</p>
-                  <p className="text-gray-300">andre.lira@abnmotoservices.com.br</p>
-                </div>
-              </div>
+              
 
               <div className="flex items-start space-x-4 p-4 bg-ride-dark rounded-lg hover:bg-opacity-80 transition-all duration-300">
                 <MapPin className="w-6 h-6 text-ride-orange mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-white mb-1">Endereço</h4>
-                  <p className="text-gray-300">SMAS Área Especial G Conjunto A Lote 16/17 </p>
+                  <p className="text-gray-300"> A oficina fica no Galpão 17,SMAS Área Especial G Conjunto A Lote 16/17 </p>
+                 
                   <p className="text-gray-300">Guará, Brasília - DF</p>
                   <p className="text-gray-300">CEP:71215-300</p>
+                  <p><a target="_blank" rel="noopener noreferrer" className="text-ride-orange hover:underline cursor-pointer" href="https://www.google.com/maps/place/ABN+Moto+Service/@-15.8157916,-47.9684375,17z/data=!3m1!4b1!4m6!3m5!1s0x935a3172baf3d2d5:0xb9d07cc2f2b2987c!8m2!3d-15.8157916!4d-47.9658626!16s%2Fg%2F11wc9wbhl0?entry=ttu&g_ep=EgoyMDI1MTAwNC4wIKXMDSoASAFQAw%3D%3D">Acesse a localização</a></p>
                 </div>
               </div>
 
@@ -70,9 +65,11 @@ export const ContactSection = () => {
             
             <form className="space-y-4">
               
-              <Button className="w-full bg-ride-orange hover:bg-orange-600 text-white py-3 transform hover:scale-105 transition-all duration-300">
-                SOLICITAR ORÇAMENTO
-              </Button>
+            <a href="https://wa.me/5561998673293" target="_blank" rel="noopener noreferrer">
+          <Button variant="secondary" className="bg-black text-white hover:bg-gray-800 px-8 py-3 uppercase">
+            Fazer orçamento
+          </Button>
+        </a>
             </form>
 
             <div className="mt-8 p-6 bg-ride-orange bg-opacity-10 rounded-lg">

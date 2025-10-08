@@ -10,7 +10,7 @@ export const BrandsSection = () => {
     },
     {
       name: "HARLEY DAVIDSON",
-      logo: "/harley-removebg.png",
+      logo: "/har.png",
       specialty: "Manutenção completa",
       description: "Serviços especializados para a linha completa Harley Davidson"
     },

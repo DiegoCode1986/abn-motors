@@ -26,9 +26,11 @@ export const Footer = () => {
         <p className="max-w-2xl mx-auto mb-8 text-gray-200">
           Fique por dentro das novidades, eventos exclusivos e promoções especiais da ABN Motors. Faça parte da nossa comunidade de apaixonados por duas rodas.
         </p>
-        <Button variant="secondary" className="bg-black text-white hover:bg-gray-800 px-8 py-3 uppercase">
-          Fazer orçamento
-        </Button>
+        <a href="https://wa.me/5561998673293" target="_blank" rel="noopener noreferrer">
+          <Button variant="secondary" className="bg-black text-white hover:bg-gray-800 px-8 py-3 uppercase">
+            Fazer orçamento
+          </Button>
+        </a>
       </div>
 
       {/* Main Footer Section */}
@@ -44,8 +46,8 @@ export const Footer = () => {
           <div className="flex flex-col items-center mb-6 md:mb-0 md:w-1/3">
             <p className="text-sm uppercase tracking-wider mb-2 text-gray-400">Siga-nos</p>
             <div className="flex space-x-4 mb-4">
-              <a href="#" className="text-gray-300 hover:text-orange-500 transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="text-gray-300 hover:text-orange-500 transition-colors"><Instagram size={20} /></a>
+              <a href="https://www.facebook.com/abnmotoservice/photos/?locale=pt_BR" className="text-gray-300 hover:text-orange-500 transition-colors"><Facebook size={20} /></a>
+              <a href="https://www.instagram.com/abnmoto" className="text-gray-300 hover:text-orange-500 transition-colors"><Instagram size={20} /></a>
             </div>
             <p className="text-xs text-gray-500">© {new Date().getFullYear()} ABN MOTORS. Todos os direitos reservados.</p>
           </div>
