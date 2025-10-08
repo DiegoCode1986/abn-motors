@@ -2,16 +2,26 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { GoogleReviews } from "./GoogleReviews";
 
 export const ContactSection = () => {
   return (
+    <>
     <section className="py-12 sm:py-16 lg:py-20 bg-ride-gray">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <span className="text-ride-orange uppercase tracking-wide font-semibold text-sm sm:text-base">CONTATO</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-4 mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-4 mb-4">
             FAÇA-NOS UMA VISITA!
           </h2>
+          <a 
+            href="https://www.google.com/local/place/fid/0x935a3172baf3d2d5:0xb9d07cc2f2b2987c/photosphere?iu=https://lh3.googleusercontent.com/gps-cs-s/AC9h4noNL9e8L6bsT0Bzq8I5JNAO8bOx0djwwS2C5hm6Kmgo94Hx3D6a406p4lnDmyp1foGRNT0jwFP8X_u1Avzs4rSZSUpT5TaHBQ2t7CUkZGcdHBh7DOzUl08FMyKhUbcXi_HbZTDCcpKKSIw%3Dw160-h106-k-no-pi-10-ya281.78-ro0-fo100&ik=CAoSHENJQUJJaENyTXV3SmRCV2pKQkVrUU8yOG96VGY%3D" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-ride-orange hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-md transition-colors duration-300 mb-6"
+          >
+            Faça um tour na nossa loja
+          </a>
           <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto px-4">
             Nossa oficina está preparada para receber você e sua motocicleta. 
             Agende uma visita ou solicite um orçamento sem compromisso.
@@ -83,5 +93,9 @@ export const ContactSection = () => {
         </div>
       </div>
     </section>
+    <GoogleReviews />
+    </>
   );
 };
+
+export default ContactSection;
