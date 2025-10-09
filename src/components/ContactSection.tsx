@@ -15,7 +15,7 @@ export const ContactSection = () => {
             FAÇA-NOS UMA VISITA!
           </h2>
           <a 
-            href="https://www.google.com/local/place/fid/0x935a3172baf3d2d5:0xb9d07cc2f2b2987c/photosphere?iu=https://lh3.googleusercontent.com/gps-cs-s/AC9h4noNL9e8L6bsT0Bzq8I5JNAO8bOx0djwwS2C5hm6Kmgo94Hx3D6a406p4lnDmyp1foGRNT0jwFP8X_u1Avzs4rSZSUpT5TaHBQ2t7CUkZGcdHBh7DOzUl08FMyKhUbcXi_HbZTDCcpKKSIw%3Dw160-h106-k-no-pi-10-ya281.78-ro0-fo100&ik=CAoSHENJQUJJaENyTXV3SmRCV2pKQkVrUU8yOG96VGY%3D" 
+            href="https://www.google.com/local/place/fid/0x935a3172baf3d2d5:0xb9d07cc2f2b2987c/photosphere?iu=https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr6HUN01PwasRtPkVxKW6IA1MXT3YNh_7UGYh9paT_KcGW9Ocoli62xmlZ1eOTdvcwsu5Y5GZHdIOX9ySVx2av0j3s4plPTYNEe_dzyCnBn2RWHexhizchpOKYMarxK_baNtMs8ZesNem95%3Dw160-h106-k-no-pi-10.112571-ya236.26743-ro0-fo100&ik=CAoSHENJQUJJaEN6NnVUWk1HQUZhLTVmb1pwYy02bXM%3D" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block bg-ride-orange hover:bg-orange-600 text-white font-semibold px-6 py-2 rounded-md transition-colors duration-300 mb-6"
