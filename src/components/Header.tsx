@@ -8,13 +8,13 @@ export const Header = () => {
         <div className="hidden md:flex justify-between items-center py-2 text-sm border-b border-ride-gray">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2 text-gray-300 hover:text-ride-orange transition-colors">
-              <MapPin className="w-4 h-4" />
-              <span>MAPA E HORÁRIOS</span>
+              
+              
             </div>
           </div>
           <div className="flex items-center space-x-2 text-gray-300 hover:text-ride-orange transition-colors">
             <Phone className="w-4 h-4" />
-            <span>61 98575-6479</span>
+            <span> (61) 99867-3293</span>
           </div>
         </div>
 

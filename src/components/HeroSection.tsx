@@ -20,7 +20,7 @@ export const HeroSection = () => {
               <span className="text-ride-orange">OFICINA ESPECIALIZADA</span>
             </div>
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 animate-fade-in animation-delay-200 text-white leading-tight">
-              ABN MOTO SERVICES
+              ABN MOTO SERVICE
             </h1>
             <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-8 animate-fade-in animation-delay-300 leading-relaxed">
               Especializada em Motos de <span className="text-ride-orange font-semibold">Média e Alta Cilindrada</span>

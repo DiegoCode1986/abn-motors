@@ -27,7 +27,7 @@ export const ServicesSection = () => {
         <div className="text-center mb-12 sm:mb-16 animate-fade-in">
           <span className="text-ride-orange uppercase tracking-wide font-semibold text-sm sm:text-base">SERVIÇOS</span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mt-4 mb-6">
-            NOSSOS ESPECIALIDADES
+            NOSSAS ESPECIALIDADES
           </h2>
           <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto px-4">
             Oferecemos serviços completos para motocicletas de média e alta cilindrada, 

@@ -75,11 +75,15 @@ export const ContactSection = () => {
             
             <form className="space-y-4">
               
-            <a href="https://wa.me/5561998673293" target="_blank" rel="noopener noreferrer">
-          <Button variant="secondary" className="bg-black text-white hover:bg-gray-800 px-8 py-3 uppercase">
-            Fazer orçamento
-          </Button>
-        </a>
+           
+            <Button 
+              variant="secondary" 
+              className="bg-black text-white hover:bg-gray-800 px-8 py-3 uppercase"
+              onClick={() => window.open('https://wa.me/5561998673293', '_blank', 'noopener,noreferrer')}
+            >
+              Fazer orçamento
+            </Button>
+       
             </form>
 
             <div className="mt-8 p-6 bg-ride-orange bg-opacity-10 rounded-lg">
